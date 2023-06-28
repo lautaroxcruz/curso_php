@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Cálculo de Precio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Sistema de Cálculo de Precio</h1>
+
+    <div class="container">
+        <form action="calcular.php" method="POST">
+            <h2>Datos del Usuario</h2>
+            <div class="form-group">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+
+            <h2>Detalle de Producto 1</h2>
+            <div class="form-group">
+                <label for="codigo1">Código:</label>
+                <input type="text" id="codigo1" name="codigo1" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcion1">Descripción:</label>
+                <input type="text" id="descripcion1" name="descripcion1" required>
+            </div>
+            <div class="form-group">
+                <label for="cantidad1">Cantidad:</label>
+                <input type="number" id="cantidad1" name="cantidad1" required>
+            </div>
+            <div class="form-group">
+                <label for="valor1">Valor:</label>
+                <input type="number" step="0.01" id="valor1" name="valor1" required>
+            </div>
+            <div class="form-group">
+                <label for="impuesto1">Impuesto (%):</label>
+                <input type="number" step="0.01" id="impuesto1" name="impuesto1" required>
+            </div>
+
+            <h2>Detalle de Producto 2</h2>
+            <div class="form-group">
+                <label for="codigo2">Código:</label>
+                <input type="text" id="codigo2" name="codigo2" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcion2">Descripción:</label>
+                <input type="text" id="descripcion2" name="descripcion2" required>
+            </div>
+            <div class="form-group">
+                <label for="cantidad2">Cantidad:</label>
+                <input type="number" id="cantidad2" name="cantidad2" required>
+            </div>
+            <div class="form-group">
+                <label for="valor2">Valor:</label>
+                <input type="number" step="0.01" id="valor2" name="valor2" required>
+            </div>
+            <div class="form-group">
+                <label for="impuesto2">Impuesto (%):</label>
+                <input type="number" step="0.01" id="impuesto2" name="impuesto2" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn-calcular">Calcular</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
